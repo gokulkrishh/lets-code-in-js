@@ -1,15 +1,13 @@
 /*
   Palindrome
   -------------
+  Time Complexity - O(n)
 
   @params {string}
   @return boolean
 */
 
 var isPalindrome = function(word) {
-  var reversedWord = word.split("").reverse().join("");
-
-  if (word === reversedWord) return true
-
-  return false;
+  word = word.replace(/\W/g, "").toLowerCase();
+  return (word === word.split("").reverse().join(""));
 };
