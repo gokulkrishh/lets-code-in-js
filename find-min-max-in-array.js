@@ -6,7 +6,6 @@
   @return number
 */
 
-
 var findMax = function(arr) {
   return Math.max.apply(null, arr);
 };

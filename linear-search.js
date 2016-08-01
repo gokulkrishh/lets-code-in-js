@@ -7,7 +7,6 @@
   @return number
 */
 
-
 var linearSearch = function(arr, searchNum) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] === searchNum) {
